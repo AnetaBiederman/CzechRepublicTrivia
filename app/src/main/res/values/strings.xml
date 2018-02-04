@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Czech Republic Trivia</string>
+    <string name="user_name_editview">User name</string>
+    <string name="submit_answer">submit answers</string>
+    <string name="reset">reset</string>
+    <string name="start">start</string>
+    //questions
+    <string name="question_1">1) What is the capital city of Czech Republic?</string>
+    <string name="question_2">2) Who is the president of Czech Republic?</string>
+    <string name="question_3">3) Which of the following countries neighbor Czech Republic?</string>
+    <string name="question_4">4) The highest mountain in Czech Republic?</string>
+    <string name="question_5">5) What is the most popular drink in Czech Republic?</string>
+    <string name="question_6">6) On which date was Czech Republic founded?</string>
+    <string name="question_7">7) What is the typical czech wedding food?</string>
+    <string name="question_8">8) What is the national symbol of Czech Republic?</string>
+    <string name="question_9">9) Choose at least two Czech beer brands?</string>
+    <string name="question_10">10) In which city can you find the bone monastery?</string>
+    // answers
+    <string name="chomutov">Chomutov</string>
+    <string name="brno">Brno</string>
+    <string name="prague">Prague</string>
+    <string name="pardubice">Pardubice</string>
+    <string name="president_s_last_name">President\'s last name</string>
+    <string name="poland">Poland</string>
+    <string name="france">France</string>
+    <string name="germany">Germany</string>
+    <string name="slovenia">Slovenia</string>
+    <string name="austria">Austria</string>
+    <string name="italy">Italy</string>
+    <string name="snezka">Snežka</string>
+    <string name="jested">Ještěď</string>
+    <string name="rip">Říp</string>
+    <string name="water">Water</string>
+    <string name="coca_cola">Coca-cola</string>
+    <string name="beer">Beer</string>
+    <string name="dd_mm_yyyy">dd.mm.yyyy</string>
+    <string name="svickova">Svíčková</string>
+    <string name="gulas">Guláš</string>
+    <string name="bramborak">Bramborák</string>
+    <string name="bernard">Bernard</string>
+    <string name="pilsner_urquel">Pilsner Urquel</string>
+    <string name="stella_artois">Stella Artois</string>
+    <string name="tuborg">Tuborg</string>
+    <string name="budweiser_budvar">Budweiser Budvar</string>
+    <string name="ursur">Ursur</string>
+    <string name="oloumouc">Oloumouc</string>
+    <string name="kutna_hora">Kutná Hora</string>
+    <string name="zeman">Zeman</string>
+    // Toast messages
+    <string name="toast1">%1$s your score is %2$d. :( You should read something about Czech Republic.</string>
+    <string name="toast2">%1$s your score is %2$d. At least you know that Czech Republic exist.</string>
+    <string name="toast3">%1$s your score is %2$d. Good job %1$s!. It is nice to see you know a lot about Czech Republic.</string>
+    <string name="toast4">%1$s your score is %2$d. Fantastic!! %1$s, you know really a lot about Czech Republic.</string>
+    <string name="title_activity_user_name">UserName</string>
+    <string name="next">next</string>
+
+
+</resources>

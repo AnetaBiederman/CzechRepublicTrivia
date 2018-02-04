@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.android.czechrepublictrivia.UserName">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/cr_flag"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/cr_flag1" />
+
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cr_flag"
+                android:maxLines="1"
+                android:maxLength="19"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:inputType="textCapWords"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_centerInParent="true"
+            android:padding="16dp"
+            android:text="@string/next"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+

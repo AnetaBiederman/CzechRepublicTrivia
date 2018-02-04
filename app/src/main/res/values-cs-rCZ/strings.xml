@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kvíz o České Republice</string>
+    <string name="user_name_editview">Jméno uživatele</string>
+    <string name="submit_answer">Odeslat odpovědi</string>
+    <string name="reset">vymazat</string>
+    <string name="question_1">1) Jaké je hlavní město České Republiky?</string>
+    <string name="question_2">2) Kdo je prezidentem v České Republice?</string>
+    <string name="question_3">3) Která z následujících zemí nemá hranice s Českou Republikou?</string>
+    <string name="question_4">4) Jaké je nejvyšší hora v České Republice?</string>
+    <string name="question_5">5) Jaký nápoj Češi nejvíce konzumují?</string>
+    <string name="question_6">6) Kdy byla založena Česká Republika?</string>
+    <string name="question_7">7) Jaké je tradiční jídlo na české svatbě?</string>
+    <string name="question_8">8) Jaký má Česká Republika nádorní symbol?</string>
+    <string name="question_9">9) Vyber alespoň dvě značky českých piv.</string>
+    <string name="question_10">10) V jakém městě se nachází Kostnice?</string>
+    <string name="chomutov">Chomutov</string>
+    <string name="brno">Brno</string>
+    <string name="prague">Praha</string>
+    <string name="pardubice">Pardubice</string>
+    <string name="president_s_last_name">Příjmení prezidenta</string>
+    <string name="poland">Polsko</string>
+    <string name="france">Francie</string>
+    <string name="germany">Německo</string>
+    <string name="slovenia">Slovinsko</string>
+    <string name="austria">Rakousko</string>
+    <string name="italy">Itálie</string>
+    <string name="snezka">Snežka</string>
+    <string name="jested">Ještěď</string>
+    <string name="rip">Říp</string>
+    <string name="water">Voda</string>
+    <string name="coca_cola">Coca-cola</string>
+    <string name="beer">Pivo</string>
+    <string name="dd_mm_yyyy">dd.mm.rrrr</string>
+    <string name="svickova">Svíčková</string>
+    <string name="gulas">Guláš</string>
+    <string name="bramborak">Bramborák</string>
+    <string name="bernard">Bernard</string>
+    <string name="pilsner_urquel">Pilsner Urquel</string>
+    <string name="stella_artois">Stella Artois</string>
+    <string name="tuborg">Tuborg</string>
+    <string name="budweiser_budvar">Budweiser Budvar</string>
+    <string name="ursur">Ursur</string>
+    <string name="oloumouc">Oloumouc</string>
+    <string name="kutna_hora">Kutná Hora</string>
+    <string name="zeman">Zeman</string>
+    <string name="toast1">%1$s tvůj počet budu je %2$d. :( Opravdu by jsi si měl něco přečíst o České Republice.</string>
+    <string name="toast2">%1$s tvůj počet bodů je %2$d. Je dobré, že alespoň víš, že Česká Republika existuje.</string>
+    <string name="toast3">%1$s tvůj počet bodů je %2$d. Výborně %1$s!. To je skvélé, že toho víš tolik o České Republice.</string>
+    <string name="toast4">%1$s tvúj počet bodů je %2$d. Fantastcké!! %1$s, víš toho opravdu hodně o České Republice.</string>
+    <string name="next">další</string>
+
+
+</resources>
