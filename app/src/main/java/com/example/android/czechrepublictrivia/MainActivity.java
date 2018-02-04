@@ -15,13 +15,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    // user's name from previous screen
-    private String name;
     //user starts with 0 points
     private int score = 0;
-
-    Intent intent = getIntent();
-    name = intent getExtras ().getString(name);
+    String userName;
 
     private RadioGroup question1;
     private EditText question2;
@@ -193,10 +189,9 @@ public class MainActivity extends AppCompatActivity {
      */
     @SuppressLint("StringFormatInvalid")
     public void submitQuizAnswers(View view) {
-
         // User add his name for quiz
-        EditText nameInput = (EditText) findViewById(R.id.user_name);
-        String userName = nameInput.getText().toString();
+        Intent intent = getIntent();
+        userName = intent.getStringExtra("name");
 
         // this count points for correct answer for RadioGroups
         if (isChoicePrague) {
@@ -237,22 +232,23 @@ public class MainActivity extends AppCompatActivity {
         }
         // display toast messages to user after test is submit
         if (score == 0) {
-            Toast.makeText(this,getString(R.string.toast1, userName, score), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.toast1, userName, score), Toast.LENGTH_LONG).show();
             return;
         }
         if (0 < score && score <= 4) {
-            Toast.makeText(this,getString(R.string.toast2, userName, score), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.toast2, userName, score), Toast.LENGTH_LONG).show();
             return;
         }
         if (4 < score && score <= 7) {
-            Toast.makeText(this,getString(R.string.toast3, userName, score), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.toast3, userName, score), Toast.LENGTH_LONG).show();
             return;
         }
         if (7 < score && score <= 10) {
-            Toast.makeText(this,getString(R.string.toast4, userName, score), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.toast4, userName, score), Toast.LENGTH_LONG).show();
             return;
         }
     }
+
     /**
      * Reset score.
      */
@@ -283,7 +279,4 @@ public class MainActivity extends AppCompatActivity {
         question6.setText(null);
     }
 
-    public String getName() {
-        return name;
-    }
 }

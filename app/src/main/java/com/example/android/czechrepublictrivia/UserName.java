@@ -22,11 +22,11 @@ public class UserName extends AppCompatActivity {
 
             @Override
         public void onClick(View v) {
-            EditText userName = (EditText) findViewById(R.id.user_name);
-            String name = userName.getText().toString();
-            if(!TextUtils.isEmpty(name)) {
+                EditText nameInput = (EditText) findViewById(R.id.user_name);
+                String userName = nameInput.getText().toString();
+            if(!TextUtils.isEmpty(userName)) {
                 Intent intent = new Intent(UserName.this, MainActivity.class);
-                intent.putExtra("name", name);
+                intent.putExtra("name", userName);
                 startActivity(intent);
             }
             else {
