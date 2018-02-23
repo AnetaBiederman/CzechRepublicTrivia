@@ -277,6 +277,11 @@ public class MainActivity extends AppCompatActivity {
         // Reset EditTexts
         question2.setText(null);
         question6.setText(null);
+
+        // Back to home screen
+        Intent i = new Intent(this, WelcomeScreen.class);
+        startActivity(i);
     }
+
 
 }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/cr_flag"
     tools:context="com.example.android.czechrepublictrivia.MainActivity">
 
     <LinearLayout
@@ -16,13 +17,8 @@
         android:paddingTop="@dimen/activity_vertical_margin">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="@string/question_1"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            style="@style/TextViewQuestionStyle"
+            android:text="@string/question_1" />
 
         <RadioGroup
             android:id="@+id/question_1"
@@ -31,34 +27,25 @@
             android:orientation="horizontal">
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_1_brno"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/brno" />
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_1_praha"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/prague" />
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_1_pardubice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/pardubice" />
 
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/question_2"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            style="@style/TextViewQuestionStyle"
+            android:text="@string/question_2" />
 
         <EditText
             android:id="@+id/question_2"
@@ -68,58 +55,46 @@
             android:inputType="textCapWords" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/question_3"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            style="@style/TextViewQuestionStyle"
+            android:text="@string/question_3" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <CheckBox
+                style="@style/CheckBoxStyle"
                 android:id="@+id/chb_q3_poland"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/poland" />
 
             <CheckBox
+                style="@style/CheckBoxStyle"
                 android:id="@+id/chb_q3_france"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/chb_q3_poland"
                 android:text="@string/france" />
 
             <CheckBox
+                style="@style/CheckBoxStyle"
                 android:id="@+id/chb_q3_germany"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/chb_q3_france"
                 android:text="@string/germany" />
 
             <CheckBox
+                style="@style/CheckBoxStyle"
                 android:id="@+id/chb_q3_slovenia"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_below="@id/chb_q3_poland"
                 android:text="@string/slovenia" />
 
             <CheckBox
+                style="@style/CheckBoxStyle"
                 android:id="@+id/chb_q3_austria"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_below="@id/chb_q3_france"
                 android:layout_toRightOf="@id/chb_q3_slovenia"
                 android:text="@string/austria" />
 
             <CheckBox
+                style="@style/CheckBoxStyle"
                 android:id="@+id/chb_q3_italy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_below="@id/chb_q3_germany"
                 android:layout_toRightOf="@id/chb_q3_austria"
                 android:text="@string/italy" />
@@ -127,14 +102,8 @@
         </RelativeLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/question_4"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            style="@style/TextViewQuestionStyle"
+            android:text="@string/question_4" />
 
         <RadioGroup
             android:id="@+id/question_4"
@@ -143,34 +112,25 @@
             android:orientation="horizontal">
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_4_snezka"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/snezka" />
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_4_jested"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/jested" />
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_4_rip"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/rip" />
 
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/question_5"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            style="@style/TextViewQuestionStyle"
+            android:text="@string/question_5" />
 
         <RadioGroup
             android:id="@+id/question_5"
@@ -179,34 +139,25 @@
             android:orientation="horizontal">
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_5_water"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/water" />
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_5_cola"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/coca_cola" />
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_5_beer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/beer" />
 
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/question_6"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            style="@style/TextViewQuestionStyle"
+            android:text="@string/question_6" />
 
         <EditText
             android:id="@+id/question_6"
@@ -216,14 +167,8 @@
             android:inputType="textCapWords" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/question_7"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            style="@style/TextViewQuestionStyle"
+            android:text="@string/question_7" />
 
         <RadioGroup
             android:id="@+id/question_7"
@@ -232,34 +177,25 @@
             android:orientation="horizontal">
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_7_svickova"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/svickova" />
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_7_gulas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/gulas" />
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_7_bramborak"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/bramborak" />
 
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/question_8"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            style="@style/TextViewQuestionStyle"
+            android:text="@string/question_8" />
 
         <RadioGroup
             android:id="@+id/question_8"
@@ -268,9 +204,8 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/question_8_slovakia"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                style="@style/RadioButtonStyle"
+                android:id="@+id/question_8_slovakia" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -278,9 +213,8 @@
                 android:src="@drawable/slovak" />
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_8_germany"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp" />
 
             <ImageView
@@ -289,9 +223,8 @@
                 android:src="@drawable/germany" />
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_8_czech"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp" />
 
             <ImageView
@@ -302,58 +235,46 @@
         </RadioGroup>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/question_9"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            style="@style/TextViewQuestionStyle"
+            android:text="@string/question_9" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <CheckBox
+                style="@style/CheckBoxStyle"
                 android:id="@+id/chb9_bernard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/bernard" />
 
             <CheckBox
+                style="@style/CheckBoxStyle"
                 android:id="@+id/chb9_pilsner_urquel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/chb9_bernard"
                 android:text="@string/pilsner_urquel" />
 
             <CheckBox
+                style="@style/CheckBoxStyle"
                 android:id="@+id/chb9_stella_artois"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/chb9_pilsner_urquel"
                 android:text="@string/stella_artois" />
 
             <CheckBox
+                style="@style/CheckBoxStyle"
                 android:id="@+id/chb9_tuborg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_below="@id/chb9_bernard"
                 android:text="@string/tuborg" />
 
             <CheckBox
+                style="@style/CheckBoxStyle"
                 android:id="@+id/chb9_budvar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_below="@id/chb9_pilsner_urquel"
                 android:layout_toRightOf="@id/chb9_tuborg"
                 android:text="@string/budweiser_budvar" />
 
             <CheckBox
+                style="@style/CheckBoxStyle"
                 android:id="@+id/chb9_ursur"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_below="@id/chb9_stella_artois"
                 android:layout_toRightOf="@id/chb9_budvar"
                 android:text="@string/ursur" />
@@ -361,14 +282,8 @@
         </RelativeLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:text="@string/question_10"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            style="@style/TextViewQuestionStyle"
+            android:text="@string/question_10" />
 
         <RadioGroup
             android:id="@+id/question_10"
@@ -377,41 +292,32 @@
             android:orientation="horizontal">
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_10_olomouc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/oloumouc" />
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_10_kutna_hora"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/kutna_hora" />
 
             <RadioButton
+                style="@style/RadioButtonStyle"
                 android:id="@+id/question_10_chomutov"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/chomutov" />
 
         </RadioGroup>
 
         <Button
             android:id="@+id/submit_quiz_answers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            style="@style/ButtonStyle"
             android:onClick="submitQuizAnswers"
-            android:text="@string/submit_answer"
-            android:textColor="#fafafa" />
+            android:text="@string/submit_answer" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            style="@style/ButtonStyle"
             android:onClick="reset"
-            android:text="@string/reset"
-            android:textColor="#fafafa" />
+            android:text="@string/reset" />
 
     </LinearLayout>
 

@@ -37,13 +37,9 @@
 
         <Button
             android:id="@+id/button_next"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
             android:layout_below="@+id/user_name"
-            android:layout_centerInParent="true"
-            android:padding="16dp"
-            android:text="@string/next"
-            android:textColor="#FFFFFF" />
+            android:text="@string/next" />
 
     </RelativeLayout>
 
