@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox chb9Ursur;
     private RadioGroup question10;
 
+    //boolean for RadioGroups
     private boolean isChoicePrague;
     private boolean isChoiceSnezka;
     private boolean isChoiceBeer;
@@ -67,9 +68,11 @@ public class MainActivity extends AppCompatActivity {
         question8 = (RadioGroup) findViewById(R.id.question_8);
         question10 = (RadioGroup) findViewById(R.id.question_10);
 
+        setListeners();
+
         // Initialize EditTexts for questions 2,6
-        question2 = (EditText) findViewById(R.id.question_2);
-        question6 = (EditText) findViewById(R.id.question_6);
+        question2 = (EditText) findViewById(R.id.edit_question_2);
+        question6 = (EditText) findViewById(R.id.edit_question_6);
 
         // Initialize CheckBoxes for question 3
         chb3Poland = (CheckBox) findViewById(R.id.chb_q3_poland);
@@ -79,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         chb3Slovenia = (CheckBox) findViewById(R.id.chb_q3_slovenia);
         chb3Italy = (CheckBox) findViewById(R.id.chb_q3_italy);
 
+
         // Initialize CheckBoxes for question 9
         chb9Bernard = (CheckBox) findViewById(R.id.chb9_bernard);
         chb9Pilsner = (CheckBox) findViewById(R.id.chb9_pilsner_urquel);
@@ -87,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
         chb9Tuborg = (CheckBox) findViewById(R.id.chb9_tuborg);
         chb9Ursur = (CheckBox) findViewById(R.id.chb9_ursur);
 
-        setListeners();
+
     }
 
     public void setListeners() {
@@ -97,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int radioButtonId) {
                 switch (radioGroup.getId()) {
                     case R.id.question_1:
-                        if (R.id.question_1_praha == radioButtonId) {
+                        if (R.id.rb_question_1_praha == radioButtonId) {
                             //correct answer
                             isChoicePrague = true;
                         } else isChoicePrague = false;
@@ -111,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int radioButtonId) {
                 switch (radioGroup.getId()) {
                     case R.id.question_4:
-                        if (R.id.question_4_snezka == radioButtonId) {
+                        if (R.id.rb_question_4_snezka == radioButtonId) {
                             //correct answer
                             isChoiceSnezka = true;
                         } else isChoiceSnezka = false;
@@ -126,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (radioGroup.getId()) {
                     case R.id.question_5:
 
-                        if (R.id.question_5_beer == radioButtonId) {
+                        if (R.id.rb_question_5_beer == radioButtonId) {
                             //correct answer
                             isChoiceBeer = true;
                         } else isChoiceBeer = false;
@@ -140,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int radioButtonId) {
                 switch (radioGroup.getId()) {
                     case R.id.question_7:
-                        if (R.id.question_7_svickova == radioButtonId) {
+                        if (R.id.rb_question_7_svickova == radioButtonId) {
                             //correct answer
                             isChoiceSvickova = true;
                         } else isChoiceSvickova = false;
@@ -154,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int radioButtonId) {
                 switch (radioGroup.getId()) {
                     case R.id.question_8:
-                        if (R.id.question_8_czech == radioButtonId) {
+                        if (R.id.rb_question_8_czech == radioButtonId) {
                             //correct answer
                             isChoiceCzech = true;
                         } else isChoiceCzech = false;
@@ -168,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int radioButtonId) {
                 switch (radioGroup.getId()) {
                     case R.id.question_10:
-                        if (R.id.question_10_kutna_hora == radioButtonId) {
+                        if (R.id.rb_question_10_kutna_hora == radioButtonId) {
                             //correct answer
                             isChoiceKutnaHora = true;
                         } else isChoiceKutnaHora = false;
@@ -192,6 +196,7 @@ public class MainActivity extends AppCompatActivity {
         // User add his name for quiz
         Intent intent = getIntent();
         userName = intent.getStringExtra("name");
+        score = 0;
 
         // this count points for correct answer for RadioGroups
         if (isChoicePrague) {
@@ -223,11 +228,11 @@ public class MainActivity extends AppCompatActivity {
             score += +1;
         }
         // This counts points for checkbox question 3
-        if (chb3Poland.isChecked() && chb3Germany.isChecked() && chb3Austria.isChecked()) {
-            score += 1;
-        }
+        if (chb3Poland.isChecked() && chb3Germany.isChecked() && chb3Austria.isChecked() && !chb3Slovenia.isChecked() && !chb3Italy.isChecked() && !chb3France.isChecked()) {
+            score += +1;}
+
         // This counts points for checkbox question 9
-        if (chb9Bernard.isChecked() && chb9Pilsner.isChecked() && chb9Budvar.isChecked()) {
+        if (chb9Bernard.isChecked() && chb9Pilsner.isChecked() && chb9Budvar.isChecked() && !chb9Ursur.isChecked() && !chb9Tuborg.isChecked() && !chb9Stela.isChecked()) {
             score += 1;
         }
         // display toast messages to user after test is submit
@@ -254,6 +259,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void reset(View View) {
         score = 0;
+
         // Reset all CheckBoxes
         chb3Austria.setChecked(false);
         chb3Germany.setChecked(false);
@@ -267,6 +273,7 @@ public class MainActivity extends AppCompatActivity {
         chb9Stela.setChecked(false);
         chb9Tuborg.setChecked(false);
         chb9Ursur.setChecked(false);
+
         // Reset all RadioButtons
         question1.clearCheck();
         question4.clearCheck();
@@ -274,14 +281,13 @@ public class MainActivity extends AppCompatActivity {
         question7.clearCheck();
         question8.clearCheck();
         question10.clearCheck();
+
         // Reset EditTexts
         question2.setText(null);
         question6.setText(null);
 
-        // Back to home screen
+        // Back to WelcomeScreen
         Intent i = new Intent(this, WelcomeScreen.class);
         startActivity(i);
     }
-
-
 }

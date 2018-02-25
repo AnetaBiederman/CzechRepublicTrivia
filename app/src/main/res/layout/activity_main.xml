@@ -28,17 +28,17 @@
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_1_brno"
+                android:id="@+id/rb_question_1_brno"
                 android:text="@string/brno" />
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_1_praha"
+                android:id="@+id/rb_question_1_praha"
                 android:text="@string/prague" />
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_1_pardubice"
+                android:id="@+id/rb_question_1_pardubice"
                 android:text="@string/pardubice" />
 
         </RadioGroup>
@@ -48,7 +48,7 @@
             android:text="@string/question_2" />
 
         <EditText
-            android:id="@+id/question_2"
+            android:id="@+id/edit_question_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/president_s_last_name"
@@ -113,17 +113,17 @@
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_4_snezka"
+                android:id="@+id/rb_question_4_snezka"
                 android:text="@string/snezka" />
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_4_jested"
+                android:id="@+id/rb_question_4_jested"
                 android:text="@string/jested" />
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_4_rip"
+                android:id="@+id/rb_question_4_rip"
                 android:text="@string/rip" />
 
         </RadioGroup>
@@ -140,17 +140,17 @@
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_5_water"
+                android:id="@+id/rb_question_5_water"
                 android:text="@string/water" />
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_5_cola"
+                android:id="@+id/rb_question_5_cola"
                 android:text="@string/coca_cola" />
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_5_beer"
+                android:id="@+id/rb_question_5_beer"
                 android:text="@string/beer" />
 
         </RadioGroup>
@@ -160,7 +160,7 @@
             android:text="@string/question_6" />
 
         <EditText
-            android:id="@+id/question_6"
+            android:id="@+id/edit_question_6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/dd_mm_yyyy"
@@ -178,17 +178,17 @@
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_7_svickova"
+                android:id="@+id/rb_question_7_svickova"
                 android:text="@string/svickova" />
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_7_gulas"
+                android:id="@+id/rb_question_7_gulas"
                 android:text="@string/gulas" />
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_7_bramborak"
+                android:id="@+id/rb_question_7_bramborak"
                 android:text="@string/bramborak" />
 
         </RadioGroup>
@@ -205,7 +205,7 @@
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_8_slovakia" />
+                android:id="@+id/rb_question_8_slovakia" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -214,7 +214,7 @@
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_8_germany"
+                android:id="@+id/rb_question_8_germany"
                 android:layout_marginLeft="16dp" />
 
             <ImageView
@@ -224,7 +224,7 @@
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_8_czech"
+                android:id="@+id/rb_question_8_czech"
                 android:layout_marginLeft="16dp" />
 
             <ImageView
@@ -293,17 +293,17 @@
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_10_olomouc"
+                android:id="@+id/rb_question_10_olomouc"
                 android:text="@string/oloumouc" />
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_10_kutna_hora"
+                android:id="@+id/rb_question_10_kutna_hora"
                 android:text="@string/kutna_hora" />
 
             <RadioButton
                 style="@style/RadioButtonStyle"
-                android:id="@+id/question_10_chomutov"
+                android:id="@+id/rb_question_10_chomutov"
                 android:text="@string/chomutov" />
 
         </RadioGroup>
